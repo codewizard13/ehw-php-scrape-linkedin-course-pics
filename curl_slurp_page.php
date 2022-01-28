@@ -96,7 +96,7 @@ $html = print_link_list($img_urls);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-.ehw-wrapper {
+.ehw-curl-results {
     background: beige;
     border: solid 2px red;
     margin: 2rem auto;
@@ -107,7 +107,7 @@ $html = print_link_list($img_urls);
 </style>
 </head>
 <body>
-    <section class='ehw-wrapper'>
+    <section class='ehw-curl-results'>
         <?php echo $html; ?>
     </section>
 </body>
