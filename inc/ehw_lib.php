@@ -31,7 +31,7 @@ function get_web_content($search_url) {
 }
 
 /**
- * Get and return array of image urls from web content
+ * Get and return array of image urls from web content.
  * 
  * Sample Regex:
  * '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
@@ -46,7 +46,11 @@ function get_img_urls($html, $reg) {
 }
 
 /**
- * Get and return array of urls from web content
+ * Get and return array of urls from web content.
+ * 
+ * @input:
+ * - $html: string, chunk of html
+ * - $reg: PCRE compatible regex
  */
 function get_urls($html, $reg) {
     // Find and return array of all image urls
