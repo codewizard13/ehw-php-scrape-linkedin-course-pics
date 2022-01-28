@@ -11,6 +11,7 @@ File Version:    1.00.00
 
 File Purpose:
   This JavaScript file is a LIBRARY of helper functions.
+  It is the MAIN library file.
 
 TAGS:   JavaScript, ES6, DOM Manipulation, App, Eric L. Hepperle, Eric Hepperle
 
