@@ -133,6 +133,17 @@ echo $result;
 
 <!-- /FORM -->
 
+<!-- SEARCH RESULTS -->
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	echo "Hello World!";
+}
+
+?>
+
+<!-- /SEARCH RESULTS -->
+
 <?php include('curl_slurp_page.php'); ?>
 
 <div id="hidden-div"></div>
