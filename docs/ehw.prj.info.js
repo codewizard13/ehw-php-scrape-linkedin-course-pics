@@ -6,6 +6,7 @@ This is the main details page for the project
 Project Name:   EHW ES6 Demo: Scrape LinkedIn Course List Images
 Proj Shortname: ES6 Demo: Scrape LinkedIn Images 
 Main Prj File:  controller.php
+Proj Repo:      ehw-php-scrape-linkedin-course-pics
 
 This Filename:  ehw.prj.info.js
 Date Created:   01/28/22
