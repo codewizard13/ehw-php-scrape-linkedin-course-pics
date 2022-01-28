@@ -1,6 +1,6 @@
 <?php
 /*
-Project Name:   EHW ES6 Demo: Scrape LinkedIn Course List Images
+Project Name:   EHW PHP Demo: Scrape LinkedIn Course List Images
 Main Prj File:  controller.php
 
 This Filename:  ehw.lib.php
