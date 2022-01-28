@@ -1,8 +1,8 @@
 /*
-Project Name:   EHW APP: Scrape Upwork Job Details
+Project Name:   EHW ES6 Demo: Scrape LinkedIn Course List Images
 Main Prj File:  controller.php
 
-This Filename:  App.js
+This Filename:  Demo.js
 Date Created:   01/19/22
 Date Updated:   01/28/22
 Programmer:     Eric L. Hepperle
