@@ -47,12 +47,12 @@ Future:
 $page_title = "EHW PHP Demo: Scrape LinkedIn Course List Images";
 $prj_shortname = "PHP Demo: Scrape LinkedIn Images";
 $purpose = <<<PURP
-Web scraper demo for testing slurping / web scraping
+Web Scraper demo for testing slurping / web scraping
 with PHP cURL module. The demo grabs all images from
 a given search url for LinkedIn Learning courses. It
 then formats and displays all the images in a grid.
 PURP;
-$date_created = "01/19/22"
+$date_created = "01/28/22"
 ?>
 
 <!DOCTYPE html>
