@@ -97,9 +97,9 @@ main {
 }
 
 #hidden-div {
-	background: yellow;
+	background: rgba(255, 165, 0, .3);
 	width: 80%;
 	border: solid 3px #333;
 	min-height: 20px;
-
+    display: none;
 }
