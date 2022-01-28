@@ -136,10 +136,22 @@ echo $result;
 <!-- SEARCH RESULTS -->
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	echo "Hello World!";
 
-	$search_keyword = $_POST("")
+/**
+ * Validate and sanitize search string
+ */
+function test_input($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+	$search_keyword = test_input($_POST["name"]);
+
+	echo $search_keyword;
 }
 
 ?>
