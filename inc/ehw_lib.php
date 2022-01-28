@@ -49,8 +49,8 @@ function get_img_urls($html, $reg) {
  * Get and return array of urls from web content.
  * 
  * @input:
- * - $html: string, chunk of html
- * - $reg: PCRE compatible regex
+ *   $html: string, chunk of html
+ *   $reg: string, PCRE compatible regex
  */
 function get_urls($html, $reg) {
     // Find and return array of all image urls
