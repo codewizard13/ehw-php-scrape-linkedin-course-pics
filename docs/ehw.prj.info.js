@@ -3,8 +3,8 @@ This is the main details page for the project
 */
 
 /*
-Project Name:   EHW APP: Scrape Upwork Job Details
-Proj Shortname: ES6: Scrape Upwork Job Deets 
+Project Name:   EHW ES6 Demo: Scrape LinkedIn Course List Images
+Proj Shortname: ES6 Demo: Scrape LinkedIn Images 
 Main Prj File:  controller.php
 
 This Filename:  ehw.prj.info.js
@@ -16,13 +16,16 @@ Author URI:   http://erichepperle.com
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
-Proj Version:    1.00.00
-File Version:    1.00.00
+Proj Version:   1.00.00
+File Version:   1.00.00
 
-Prj Purpose: 
-JavaScript ES6 web scraper to quickly grab job details
-from Upwork job posts. This will be used to build
-a markdown file to document jobs applied for.
+Prj Type:       Demo     
+
+Prj Purpose:
+Web scraper demo for testing slurping / web scraping
+with PHP cURL module. The demo grabs all images from
+a given search url for LinkedIn Learning courses. It
+then formats and displays all the images in a grid.
 
 File Purpose:
 Holds project details used in header boilerplate comments.
@@ -38,19 +41,13 @@ Requires:
 * Be logged into LinkedIn Learning
 
 Demonstrates:
-* ES6 Arrow Functions
-* Map, Reduce, Filter, Find
-* Promises, Closures, Anonymous Functions
-* SetTimeout, Timers,
-* Const, Let, Var
-* For-in, For-of, ForEach
-* Continue, Break, Switch-Case
+* --
 
 Tags:
-ES6, arrow functions, PHP variables
+Demo, PHP, cURL, slurp, web scraper, scraping, image gallery
 
 Future:
-* Use curl or fetch API to grab course page and parse info from there
+* --
 
 */
 
