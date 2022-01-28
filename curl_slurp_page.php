@@ -95,16 +95,6 @@ $html = print_link_list($img_urls);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-.ehw-curl-results {
-    background: beige;
-    border: solid 2px red;
-    margin: 2rem auto;
-    max-width: 1024px;
-    width: 60%;
-    overflow: hidden;
-}
-</style>
 </head>
 <body>
     <section class='ehw-curl-results'>
