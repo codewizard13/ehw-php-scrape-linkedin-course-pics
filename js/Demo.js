@@ -11,14 +11,16 @@ File Version:    1.00.00
 
 File Purpose:
   This JavaScript file contains the main "business logic" and primary
-  mechanics of the current project. This project scrapes job details
-  from Upwork job posts.
+  mechanics of the current project. This demo remotely grabs all images
+  from a given search url for LinkedIn Learning courses and displays
+  as image gallery.
 
-TAGS:   Eric Hepperle, JavaScript, ES6, DOM Manipulation, App, Eric L. Hepperle
+TAGS:   JavaScript, ES6, DOM Manipulation, App, Web Scraping, Scraper,
+         Slurp, Eric L. Hepperle, Eric Hepperle
 
 Usage:
-  Navigate to any Upwork job post page and paste this code into the
-  browser developer console and hit enter to run.
+  Enter any valid search string into the "search" field and press "Submit"
+  to perform the search. Results will display in same page.
 
 Sample results: 
 --
@@ -26,6 +28,7 @@ Sample results:
 Requires:
   * controller.php
   * Browser
+  * LinkedIn account (must be logged in on the same browser session)
     
 Demonstrates:
   * Vanilla JavaScript

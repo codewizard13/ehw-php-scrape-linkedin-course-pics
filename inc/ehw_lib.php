@@ -1,6 +1,6 @@
 <?php
 /*
-Project Name:   EHW APP: Scrape Upwork Job Details
+Project Name:   EHW ES6 Demo: Scrape LinkedIn Course List Images
 Main Prj File:  controller.php
 
 This Filename:  ehw.lib.php
@@ -8,7 +8,7 @@ Date Created:   01/26/22
 Date Updated:   01/28/22
 Programmer:     Eric L. Hepperle
 
-File Version:    1.00.00
+File Version:    1.00.01
 
 File Purpose:
 Library of my portable functions that can be used in
