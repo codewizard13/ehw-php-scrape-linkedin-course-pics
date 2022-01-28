@@ -1,5 +1,5 @@
 /*
-Project Name:   EHW APP: Scrape Upwork Job Details
+Project Name:   EHW ES6 Demo: Scrape LinkedIn Course List Images
 Main Prj File:  controller.php
 
 This Filename:  ehw.lib.js
