@@ -60,24 +60,11 @@ function get_img_urls($html, $reg) {
 
 $img_urls = get_img_urls($html, $regex_img);
 
-// Store image container style in a heredoc
-$img_cont_style = <<<EOT
-float: left;
-margin: 7 0 0 7;
-list-style: none;
-max-width: 500px;
-width: 21%;
-EOT;
-
-// Make image container style into global constant
-//  so we can access inside functions
-define('IMG_CONT_STYLE', $img_cont_style);
-
 function print_link_list($urls) {
     $out = ''; // initialize output buffer
     $out .= '<ul>';
     for ($i=0; $i<count($urls); $i++) {
-        $out .= "<li style='" . IMG_CONT_STYLE. "'>";
+        $out .= "<li class='res-img-cont'>";
         $out .= "<img src='$urls[$i]' style='width: 100%'>";
         $out .= '</li>';
     }
