@@ -121,6 +121,9 @@ $result = curl_exec($curl);
 echo "<h2>RESULT:</h2>";
 echo $result;
 */
+
+include('curl_slurp_page.php');
+
 ?>
 
 <div id="hidden-div"></div>
