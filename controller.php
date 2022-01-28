@@ -123,16 +123,6 @@ echo $result;
 */
 ?>
 
-<style>
-#hidden-div {
-	background: yellow;
-	width: 80%;
-	border: solid 3px #333;
-	min-height: 20px;
-
-}
-</style>
-
 <div id="hidden-div"></div>
 
 

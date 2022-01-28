@@ -95,3 +95,11 @@ main {
 #ehw-content h4 {
     margin-top: 0;
 }
+
+#hidden-div {
+	background: yellow;
+	width: 80%;
+	border: solid 3px #333;
+	min-height: 20px;
+
+}
