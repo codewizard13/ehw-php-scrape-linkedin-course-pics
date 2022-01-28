@@ -127,8 +127,8 @@ echo $result;
 <!-- FORM -->
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-	<input type="text" placeholder="Enter a string to search" autofocus />
-	<input type="submit" name="submit" value="Search" />
+	<input type="text" name="name" placeholder="Enter a string to search" autofocus />
+	<input type="submit" name="search" value="Search" />
 </form>
 
 <!-- /FORM -->
@@ -138,6 +138,8 @@ echo $result;
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	echo "Hello World!";
+
+	$search_keyword = $_POST("")
 }
 
 ?>
