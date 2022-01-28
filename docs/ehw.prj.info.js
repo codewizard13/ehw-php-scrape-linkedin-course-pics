@@ -41,7 +41,10 @@ Requires:
 * Be logged into LinkedIn Learning
 
 Demonstrates:
-* --
+* PHP cURL
+* Web Scraping/Scrapers/Slurp
+* PHP Regex
+* preg_match_all()
 
 Tags:
 Demo, PHP, cURL, slurp, web scraper, scraping, image gallery
