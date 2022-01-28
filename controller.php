@@ -122,12 +122,20 @@ echo "<h2>RESULT:</h2>";
 echo $result;
 */
 
-include('curl_slurp_page.php');
-
 ?>
 
-<div id="hidden-div"></div>
+<!-- FORM -->
 
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+	<input type="text" placeholder="Enter a string to search" autofocus />
+	<input type="submit" name="submit" value="Search" />
+</form>
+
+<!-- /FORM -->
+
+<?php include('curl_slurp_page.php'); ?>
+
+<div id="hidden-div"></div>
 
 
 
