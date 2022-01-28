@@ -51,9 +51,13 @@ Demo Palette:
 }
 #ehw-top-head {
     color: white;
+    font-family: Roboto, 'Arial Rounded MT', 'Gill Sans', Arial, Tahoma, sans-serif;
 }
 #ehw-top-head h2 {
     color: chartreuse;    
+}
+#ehw-top-head > p {
+    line-height: .3rem
 }
 #ehw-top-head .property {
     opacity: .5;
@@ -65,6 +69,8 @@ main {
     border: solid gray 2px;
     padding: .4em 1em;
     overflow: hidden;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: .8rem;
 
 }
 .ehw-code pre {
