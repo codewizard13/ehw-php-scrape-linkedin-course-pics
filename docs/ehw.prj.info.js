@@ -29,7 +29,8 @@ a given search url for LinkedIn Learning courses. It
 then formats and displays all the images in a grid.
 
 File Purpose:
-Holds project details used in header boilerplate comments.
+Holds project details used in header boilerplate comments, as well
+as other notes and data.
 
 Usage:
 Navigate to any video of an Upwork job posting page and paste the
