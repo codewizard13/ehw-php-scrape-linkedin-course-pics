@@ -10,9 +10,10 @@ Programmer:     Eric L. Hepperle
 File Version:    1.00.00
 
 Prj Purpose: 
-JavaScript ES6 web scraper to quickly grab job details
-from Upwork job posts. This will be used to build
-a markdown file to document jobs applied for.
+Web Scraper demo for testing slurping / web scraping
+with PHP cURL module. The demo grabs all images from
+a given search url for LinkedIn Learning courses. It
+then formats and displays all the images in a grid.
 
 File Purpose:
 PHP Controller file for project.
@@ -28,13 +29,11 @@ Requires:
 * Be logged into LinkedIn Learning
 
 Demonstrates:
-* ES6 Arrow Functions
-* Map, Reduce, Filter, Find
-* Promises, Closures, Anonymous Functions
-* SetTimeout, Timers,
-* Const, Let, Var
-* For-in, For-of, ForEach
-* Continue, Break, Switch-Case
+* PHP cURL
+* PHP Heredoc
+* Web Scraping/Scrapers/Slurp
+* PHP Regex
+* preg_match_all()
 
 Tags:
 ES6, arrow functions, PHP variables
@@ -45,11 +44,14 @@ Future:
 -->
 
 <?php // Define vars:
-$page_title = "EHW APP: Scrape Upwork Job Details";
-$prj_shortname = "ES6: Scrape Upwork Job Deets";
-$purpose = "JavaScript ES6 web scraper to quickly grab job details
-from Upwork job posts. This will be used to build
-a markdown file to document jobs applied for.";
+$page_title = "EHW PHP Demo: Scrape LinkedIn Course List Images";
+$prj_shortname = "PHP Demo: Scrape LinkedIn Images";
+$purpose = <<<PURP
+Web scraper demo for testing slurping / web scraping
+with PHP cURL module. The demo grabs all images from
+a given search url for LinkedIn Learning courses. It
+then formats and displays all the images in a grid.
+PURP;
 $date_created = "01/19/22"
 ?>
 

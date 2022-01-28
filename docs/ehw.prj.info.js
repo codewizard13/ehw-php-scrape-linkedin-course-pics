@@ -44,6 +44,7 @@ Requires:
 
 Demonstrates:
 * PHP cURL
+* PHP Heredoc
 * Web Scraping/Scrapers/Slurp
 * PHP Regex
 * preg_match_all()
