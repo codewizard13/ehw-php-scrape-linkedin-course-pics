@@ -20,12 +20,10 @@ File Purpose:
 /* INCLUDES */
 require_once('ehw_lib.php');
 
-// $srch_url = ll_search_string();
-
-// $html = get_web_content($srch_url);
-
-
-
+/**
+ * @input: array of urls to image files
+ * @returns: string, html chunk formatted as img gallery
+ */
 function show_img_gallery($urls) {
     $li_items = '';
 
