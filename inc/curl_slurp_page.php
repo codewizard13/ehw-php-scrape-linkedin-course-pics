@@ -27,7 +27,9 @@ require_once('ehw_lib.php');
 function show_img_gallery($urls, $desired_num=999) {
     $li_items = '';
     
-    for ($i=0; $i<count($urls); $i++) {
+    $desired_num = $desired_num < count($urls) ? $desired_num : count($urls);
+
+    for ($i=0; $i < $desired_num; $i++) {
         $li = "<li class='res-img-cont'>";
         $li .= "<img src='$urls[$i]' style='width: 100%'>";
         $li .= '</li>';
