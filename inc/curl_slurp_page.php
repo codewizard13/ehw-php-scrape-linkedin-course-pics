@@ -4,7 +4,7 @@ Main Prj File:  controller.php
 
 This Filename:  curl_slurp_page.php
 Date Created:   01/26/22
-Date Updated:   01/28/22
+Date Updated:   01/29/22
 Programmer:     Eric L. Hepperle
 
 File Version:    1.00.00
