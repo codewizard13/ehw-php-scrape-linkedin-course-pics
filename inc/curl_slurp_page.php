@@ -54,21 +54,30 @@ $img_urls = get_img_urls($html, $regex_img);
 // $html = print_link_list($img_urls);
 
 function show_img_gallery($urls) {
-    $out = ''; // initialize output buffer
-    $out .= '<ul>';
+    $li_items = '';
+
     for ($i=0; $i<count($urls); $i++) {
-        $out .= "<li class='res-img-cont'>";
-        $out .= "<img src='$urls[$i]' style='width: 100%'>";
-        $out .= '</li>';
+        $li = "<li class='res-img-cont'>";
+        $li .= "<img src='$urls[$i]' style='width: 100%'>";
+        $li .= '</li>';
+        $li_items .= $li;
     }
-    $out .= '</ul>';
+
+    // echo "<P>List Items:</P>";
+    // echo $li_items;
+    // exit;
+
+    $out = <<<OUT
+    <ul>
+      $li_items
+    </ul>
+    OUT;
+    
     return $out;
 }
 $html = show_img_gallery($img_urls);
 
-
 ?>
-
 
 <section class='ehw-curl-results'>
     <?php echo $html; ?>
