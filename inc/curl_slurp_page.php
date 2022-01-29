@@ -31,7 +31,6 @@ $search_str = "object oriented php";
    https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6
 */
 $search_url = $base_url . '/search?keywords=' . rawurlencode($search_str);
-echo '<h3>$search_url: ' . $search_url . '</h3>';
 
 $html = get_web_content($search_url);
 
@@ -58,7 +57,7 @@ function show_img_gallery($urls) {
     
     return $out;
 }
-$html = show_img_gallery($img_urls);
+$html = '<h3>$search_url: ' . $search_url . '</h3>';
+$html .= show_img_gallery($img_urls);
 
 ?>
-
