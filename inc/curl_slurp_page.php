@@ -18,7 +18,7 @@ File Purpose:
 
 <?php
 /* INCLUDES */
-include('ehw_lib.php');
+require_once('ehw_lib.php');
 
 /* VARIABLES */
 $base_url = 'https://www.linkedin.com/learning';

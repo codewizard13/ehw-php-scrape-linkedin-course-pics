@@ -45,7 +45,7 @@ Future:
 
 <?php
 /* INCLUDES */
-require('inc/curl_slurp_page.php');
+require_once('inc/curl_slurp_page.php');
 
 /* VARIABLE */ 
 $page_title = "EHW PHP Demo: Scrape LinkedIn Course List Images";
