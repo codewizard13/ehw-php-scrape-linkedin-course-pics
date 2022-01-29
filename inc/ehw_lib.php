@@ -44,19 +44,7 @@ function ll_search_string($srch_str='', $base_url='', $param_srch='') {
  */
 function get_web_content($search_url) {
 
-
-    // /* VARIABLES */
-    // $base_url = 'https://www.linkedin.com/learning';
-    // $param_search = '/search?keywords=API'
-    // $target_url = $base_url . $param_search
-
-    // // define default search string
-    // $def_search_str = "object oriented javascript es6";   
-    
-    // /* Sample search url:
-    // https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6
-    // */
-    // $search_url = $base_url . '/search?keywords=' . rawurlencode($search_str);
+    rawurlencode($search_str);
     
     // Slurp page code with cURL
     $curl = curl_init();
