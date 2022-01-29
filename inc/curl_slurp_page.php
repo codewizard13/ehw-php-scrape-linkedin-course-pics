@@ -31,7 +31,7 @@ function show_img_gallery($urls, $desired_num=999) {
 
     for ($i=0; $i < $desired_num; $i++) {
         $li = "<li class='res-img-cont'>";
-        $li .= "<img src='$urls[$i]' style='width: 100%'>";
+        $li .= $i+1 . ": <img src='$urls[$i]' style='width: 100%'>";
         $li .= '</li>';
         $li_items .= $li;
     }
