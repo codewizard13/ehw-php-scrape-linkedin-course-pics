@@ -27,14 +27,11 @@ function ll_search_string($srch_str='', $base_url='', $param_srch='') {
     $base_url = $base_url ? $base_url : $def_base_url;
     $param_srch = $param_srch ? $param_srch : $def_param_srch;
     $srch_str = $srch_str ? $srch_str : $def_srch_str;
-
-    echo "<h3>I'm in ll_search_string()!</h3>";
     
     /* Sample search url:
     https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6
     */
     $srch_url = $base_url . $param_srch . rawurlencode($srch_str);
-    echo '<h3>$srch_url: ' . $srch_url;
 
     return $srch_url;
 }
