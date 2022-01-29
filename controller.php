@@ -139,11 +139,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	// set $srch_keywords to value of $_POST['name']
 	$srch_keywords = clean_input($_POST["name"]);
-?>
 
-<?php
+	$srch_url = ll_search_string();
+
+	$page = get_web_content($srch_url);	
+
+	// Define regex for image urls
+	$regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
+
+	$img_urls = get_img_urls($page, $regex_img);
+
+	$html = "<h2>OUTPUT RESULTS:</h2>";
+	$html .= '<h3>$srch_url: ' . $srch_url . '</h3>';
+	$html .= show_img_gallery($img_urls);
+
 } else {
-	
+	$html = "<h3>No results returned.</h3>";
 }
 
 ?>
