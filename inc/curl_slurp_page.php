@@ -24,7 +24,7 @@ require_once('ehw_lib.php');
  * @input: array of urls to image files
  * @returns: string, html chunk formatted as img gallery
  */
-function show_img_gallery($urls) {
+function show_img_gallery($urls, $desired_num=5) {
     $li_items = '';
 
     for ($i=0; $i<count($urls); $i++) {
