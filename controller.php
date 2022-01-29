@@ -36,7 +36,7 @@ Demonstrates:
 * preg_match_all()
 
 Tags:
-ES6, arrow functions, PHP variables
+ES6, arrow functions, PHP variables, Heredoc
 
 Future:
 * Use curl or fetch API to grab course page and parse info from there
@@ -110,23 +110,6 @@ $date_created = "01/28/22"
 	<li>Prepend div to body</li>
 </ol>
 -->
-
-<?php
-// Get webpage content with cURL
-/*$curl = curl_init(); //$curl is going to be data type curl resource
-
-$target_url = "https://www.google.com/";
-
-$result = file_get_contents($target_url);
-
-curl_setopt($curl, CURLOPT_URL, $target_url);
-$result = curl_exec($curl);
-
-echo "<h2>RESULT:</h2>";
-echo $result;
-*/
-
-?>
 
 <!-- FORM -->
 
