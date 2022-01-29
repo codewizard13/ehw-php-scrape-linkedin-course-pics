@@ -128,7 +128,7 @@ $date_created = "01/28/22"
 /**
  * Validate and sanitize search string
  */
-function test_input($data) {
+function clean_input($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
 	$data = htmlspecialchars($data);
@@ -137,7 +137,7 @@ function test_input($data) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	$search_keyword = test_input($_POST["name"]);
+	$search_keyword = clean_input($_POST["name"]);
 
 	echo $search_keyword;
 }
