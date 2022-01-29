@@ -137,10 +137,12 @@ function clean_input($data) {
 // If we submitted the page
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	// set $srch_keywords to value of $_POST['name']
-	$srch_keywords = clean_input($_POST["name"]);
+	$def_srch_keywords = "object oriented javascript es6";
 
-	$srch_url = ll_search_string();
+	// set $srch_keywords to value of $_POST['name']
+	$srch_keywords = $_POST["name"] ? clean_input($_POST["name"]) : $def_srch_keywords;
+
+	$srch_url = ll_search_string($srch_keywords);
 
 	$page = get_web_content($srch_url);	
 
