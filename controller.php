@@ -146,6 +146,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- /SEARCH RESULTS -->
 
 <?php //include('curl_slurp_page.php'); ?>
+<section class='ehw-curl-results'>
+    <?php echo $html; ?>
+</section>
+
 
 <div id="hidden-div"></div>
 

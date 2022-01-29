@@ -79,8 +79,3 @@ $html = show_img_gallery($img_urls);
 
 ?>
 
-<section class='ehw-curl-results'>
-    <?php echo $html; ?>
-</section>
-
-
