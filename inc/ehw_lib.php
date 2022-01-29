@@ -33,22 +33,23 @@ function ll_search_string($srch_str='', $base_url='', $param_srch='') {
     /* Sample search url:
     https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6
     */
-    $search_url = $base_url . $param_srch . rawurlencode($srch_str);
-    echo '<h3>$search_url: ' . $search_url;
+    $srch_url = $base_url . $param_srch . rawurlencode($srch_str);
+    echo '<h3>$srch_url: ' . $srch_url;
 
-    return $search_url;
+    return $srch_url;
 }
 
 /**
  * Slurp web page content with cURL and return html
  */
-function get_web_content($search_url) {
-
-    rawurlencode($search_str);
+function get_web_content($srch_url='') {
+    
+    $def_src_url = 'https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6';
+    $srch_url = $srch_url ? $srch_url : $def_src_url; 
     
     // Slurp page code with cURL
     $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $search_url);
+    curl_setopt($curl, CURLOPT_URL, $srch_url);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
