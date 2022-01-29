@@ -137,9 +137,8 @@ function clean_input($data) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	$search_keyword = clean_input($_POST["name"]);
+	$srch_keyword = clean_input($_POST["name"]);
 
-	echo $search_keyword;
 }
 
 ?>
