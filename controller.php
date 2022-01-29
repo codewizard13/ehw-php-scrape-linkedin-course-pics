@@ -45,6 +45,7 @@ Future:
 
 <?php
 /* INCLUDES */
+require_once('inc/ehw_lib.php');
 require_once('inc/curl_slurp_page.php');
 
 /* VARIABLE */ 
