@@ -18,8 +18,9 @@ File Purpose:
     border: solid 2px red;
     margin: 2rem auto;
     max-width: 1024px;
-    width: 80%;
+    width: 90%;
     overflow: hidden;
+    padding: 0.6rem;
 }
 
 .res-img-cont {
