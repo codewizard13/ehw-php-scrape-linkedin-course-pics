@@ -117,7 +117,7 @@ $date_created = "01/28/22"
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 	<input type="text" name="name" placeholder="Enter a string to search" autofocus /><br />
 
-	Number of Results Desired: <input type="number" id="desired_num" name="desired_num" min="0" max="100">
+	Number of Results Desired: <input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10">
 
 	<input type="submit" name="search" value="Search" />
 </form>
@@ -152,7 +152,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// Define regex for image urls
 	$regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
 
-	$img_urls = get_img_urls($page, $regex_img);
+	$desired_num = $_POST["desired_num"] ? clean_input($_POST["desired_num"]) : 5;
+	echo "Desired Num: $desired_num";
+
+	$img_urls = get_img_urls($page, $regex_img, $desired_num);
 
 	$html = "<h2>OUTPUT RESULTS:</h2>";
 	$html .= '<h3>$srch_url: ' . $srch_url . '</h3>';
