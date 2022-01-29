@@ -20,9 +20,9 @@ File Purpose:
 /* INCLUDES */
 require_once('ehw_lib.php');
 
-$search_url = ll_search_string();
+$srch_url = ll_search_string();
 
-$html = get_web_content($search_url);
+$html = get_web_content($srch_url);
 
 // Define regex for image urls
 $regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
@@ -47,7 +47,7 @@ function show_img_gallery($urls) {
     
     return $out;
 }
-$html = '<h3>$search_url: ' . $search_url . '</h3>';
+$html = '<h3>$srch_url: ' . $srch_url . '</h3>';
 $html .= show_img_gallery($img_urls);
 
 ?>
