@@ -59,7 +59,7 @@ function get_web_content($srch_url='') {
 /**
  * Get and return array of image urls from web content.
  * 
- * Sample Regex:
+ * LinkedIn Learning image regex:
  * '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
  */
 function get_img_urls($html, $reg) {
