@@ -45,7 +45,7 @@ Future:
 
 <?php
 /* INCLUDES */
-require('inc/ehw_lib.php');
+require('inc/curl_slurp_page.php');
 
 /* VARIABLE */ 
 $page_title = "EHW PHP Demo: Scrape LinkedIn Course List Images";
@@ -145,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- /SEARCH RESULTS -->
 
-<?php include('curl_slurp_page.php'); ?>
+<?php //include('curl_slurp_page.php'); ?>
 
 <div id="hidden-div"></div>
 
