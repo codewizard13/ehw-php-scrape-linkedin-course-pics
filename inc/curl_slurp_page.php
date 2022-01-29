@@ -30,9 +30,9 @@ $def_search_str = "object oriented javascript es6";
 /* Sample search url:
    https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6
 */
-$def_search_url = $base_url . '/search?keywords=' . rawurlencode($def_search_str);
+$search_url = $base_url . '/search?keywords=' . rawurlencode($search_str);
 
-$html = get_web_content($def_search_url);
+$html = get_web_content($search_url);
 
 // Define regex for image urls
 $regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
@@ -57,7 +57,7 @@ function show_img_gallery($urls) {
     
     return $out;
 }
-$html = '<h3>$def_search_url: ' . $def_search_url . '</h3>';
+$html = '<h3>$search_url: ' . $search_url . '</h3>';
 $html .= show_img_gallery($img_urls);
 
 ?>
