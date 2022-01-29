@@ -20,17 +20,7 @@ File Purpose:
 /* INCLUDES */
 require_once('ehw_lib.php');
 
-/* VARIABLES */
-$base_url = 'https://www.linkedin.com/learning';
-$target_url = $base_url . '/search?keywords=API';
-
-// define default search string
-$def_search_str = "object oriented javascript es6";
-
-/* Sample search url:
-   https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6
-*/
-$search_url = $base_url . '/search?keywords=' . rawurlencode($search_str);
+$search_url = ll_search_string();
 
 $html = get_web_content($search_url);
 
