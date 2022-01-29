@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$html .= show_img_gallery($img_urls);
 
 } else {
-	$html = "<h3>No results returned.</h3>";
+	$html = "<h3>No search results available. Try again.</h3>";
 }
 
 ?>
