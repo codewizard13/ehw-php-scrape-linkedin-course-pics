@@ -43,7 +43,8 @@ Future:
 
 -->
 
-<?php // Define vars:
+<?php
+/* VARIABLE */ 
 $page_title = "EHW PHP Demo: Scrape LinkedIn Course List Images";
 $prj_shortname = "PHP Demo: Scrape LinkedIn Images";
 $purpose = <<<PURP
