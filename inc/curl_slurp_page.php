@@ -40,19 +40,6 @@ $regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
 
 $img_urls = get_img_urls($html, $regex_img);
 
-// function print_link_list($urls) {
-//     $out = ''; // initialize output buffer
-//     $out .= '<ul>';
-//     for ($i=0; $i<count($urls); $i++) {
-//         $out .= "<li class='res-img-cont'>";
-//         $out .= "<img src='$urls[$i]' style='width: 100%'>";
-//         $out .= '</li>';
-//     }
-//     $out .= '</ul>';
-//     return $out;
-// }
-// $html = print_link_list($img_urls);
-
 function show_img_gallery($urls) {
     $li_items = '';
 
@@ -62,10 +49,6 @@ function show_img_gallery($urls) {
         $li .= '</li>';
         $li_items .= $li;
     }
-
-    // echo "<P>List Items:</P>";
-    // echo $li_items;
-    // exit;
 
     $out = <<<OUT
     <ul>
