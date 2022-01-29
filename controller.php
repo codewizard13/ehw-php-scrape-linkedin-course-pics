@@ -121,7 +121,6 @@ $date_created = "01/28/22"
 
 <!-- /FORM -->
 
-<!-- SEARCH RESULTS -->
 
 <?php
 
@@ -135,20 +134,27 @@ function clean_input($data) {
 	return $data;
 }
 
+// If we submitted the page
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	$srch_keyword = clean_input($_POST["name"]);
+	// set $srch_keywords to value of $_POST['name']
+	$srch_keywords = clean_input($_POST["name"]);
+?>
 
+<?php
+} else {
+	
 }
 
 ?>
 
-<!-- /SEARCH RESULTS -->
+<!-- SEARCH RESULTS -->
 
-<?php //include('curl_slurp_page.php'); ?>
 <section class='ehw-curl-results'>
-    <?php echo $html; ?>
+	<?php echo $html; ?>
 </section>
+
+<!-- /SEARCH RESULTS -->
 
 
 <div id="hidden-div"></div>
