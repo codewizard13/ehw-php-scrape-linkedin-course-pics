@@ -47,7 +47,8 @@ function show_img_gallery($urls) {
     
     return $out;
 }
-$html = '<h3>$srch_url: ' . $srch_url . '</h3>';
+$html = "<h2>OUTPUT RESULTS:</h2>";
+$html .= '<h3>$srch_url: ' . $srch_url . '</h3>';
 $html .= show_img_gallery($img_urls);
 
 ?>
