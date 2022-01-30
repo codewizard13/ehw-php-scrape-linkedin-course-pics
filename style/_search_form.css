@@ -15,4 +15,23 @@ File Purpose:
 
 #search-form {
     background:rgb(187, 204, 204);
+
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "sidebar footer"
+
+}
+
+#search-form p {
+    background-color: pink;
+    margin: .2rem;
+}
+
+#search-form p input{
+    background:darkorange;
+    width: 100%;
 }
