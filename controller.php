@@ -114,7 +114,7 @@ $date_created = "01/28/22"
 
 <!-- FORM -->
 
-<form id="search-form" name="search-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<form onsubmit="return false;" id="search-form" name="search-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 	<p class="search-box">
 		<input type="text" name="name" placeholder="Enter a string to search" autofocus /><br />
 	</p>
@@ -125,7 +125,7 @@ $date_created = "01/28/22"
 	</p>
 
 	<p class="btn-search">
-		<input type="submit" name="search" value="Search" />
+		<input type="submit" name="search" value="Search">
 	</p>
 
 </form>
