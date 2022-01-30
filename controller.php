@@ -114,7 +114,7 @@ $date_created = "01/28/22"
 
 <!-- FORM -->
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<form id="search-form" name="search-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 	<input type="text" name="name" placeholder="Enter a string to search" autofocus /><br />
 
 	Number of Results Desired: <input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10">
