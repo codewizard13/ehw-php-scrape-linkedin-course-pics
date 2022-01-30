@@ -120,7 +120,8 @@ $date_created = "01/28/22"
 	</p>
 
 	<p class="num-sel">
-		Number of Results Desired: <input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10">
+		<label for="desired_num">How Many?</label>
+		<input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10">
 	</p>
 
 	<p class="btn-search">
