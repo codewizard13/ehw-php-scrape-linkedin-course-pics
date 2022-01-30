@@ -12,3 +12,7 @@ File Version:    1.00.00
 File Purpose: 
   Styles for search form.
 */
+
+#search-form {
+    background:rgb(187, 204, 204);
+}
