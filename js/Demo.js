@@ -36,10 +36,12 @@ Demonstrates:
 
 */
 
-console.log("HELLO!   I'm in App.js");
+console.log("HELLO!   I'm in Demo.js");
 
 const bar = "~~~ ~~~ ~~~";
 const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
+
+// Code for UPWORK JOB DEETS parsing
 
 const main = document.querySelector('.cfe-ui-job-details-content');
 const sidebar = document.querySelector('.job-details-sidebar');
