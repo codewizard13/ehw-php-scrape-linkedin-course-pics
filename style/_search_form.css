@@ -32,7 +32,13 @@ File Purpose:
     align-self: end;
 }
 
-#search-form p input{
+#search-form p input {
     background:darkorange;
     width: 100%;
+}
+
+#search-form p label {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
