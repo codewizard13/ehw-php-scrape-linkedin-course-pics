@@ -41,6 +41,7 @@ Demo Palette:
 @import 'elements.less';
 */
 @import '_curl_page.css';
+@import '_search_form.css';
 
 #wrapper {
     margin: 0 auto;
