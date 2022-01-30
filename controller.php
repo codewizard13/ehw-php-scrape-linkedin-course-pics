@@ -178,7 +178,7 @@ function get_results_html() {
 }
 
 $html = get_results_html();
-
+$html = file_get_contents('inc/tmplt__results.php');
 
 ?>
 
