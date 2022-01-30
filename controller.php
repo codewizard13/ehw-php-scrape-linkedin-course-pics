@@ -115,15 +115,15 @@ $date_created = "01/28/22"
 <!-- FORM -->
 
 <form id="search-form" name="search-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-	<p>
+	<p class="search-box">
 		<input type="text" name="name" placeholder="Enter a string to search" autofocus /><br />
 	</p>
 
-	<p>
+	<p class="num-sel">
 		Number of Results Desired: <input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10">
 	</p>
 
-	<p>
+	<p class="btn-search">
 		<input type="submit" name="search" value="Search" />
 	</p>
 
