@@ -209,7 +209,7 @@ $html = file_get_contents('inc/tmplt__results.php');
 
 <!-- JavaScript -->
 <script src="js/ehw.lib.js"></script>
-<script src="js/Demo.js"></script>
+<!--<script src="js/Demo.js"></script>-->
 
 
 </body>
