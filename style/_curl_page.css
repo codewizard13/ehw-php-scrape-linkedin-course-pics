@@ -29,4 +29,6 @@ File Purpose:
     list-style: none;
     max-width: 500px;
     width: 21%;
+    border: solid #7c7373 1px;
+    background: white;
 }
