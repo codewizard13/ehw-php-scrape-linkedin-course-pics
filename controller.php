@@ -145,33 +145,40 @@ function clean_input($data) {
 	return $data;
 }
 
-// If we submitted the page
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+function get_results_html() {
+	// If we submitted the page
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	$def_srch_keywords = "object oriented javascript es6";
+		$def_srch_keywords = "object oriented javascript es6";
 
-	// set $srch_keywords to value of $_POST['name']
-	$srch_keywords = $_POST["name"] ? clean_input($_POST["name"]) : $def_srch_keywords;
+		// set $srch_keywords to value of $_POST['name']
+		$srch_keywords = $_POST["name"] ? clean_input($_POST["name"]) : $def_srch_keywords;
 
-	$srch_url = ll_search_string($srch_keywords);
+		$srch_url = ll_search_string($srch_keywords);
 
-	$page = get_web_content($srch_url);	
+		$page = get_web_content($srch_url);	
 
-	// Define regex for image urls
-	$regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
+		// Define regex for image urls
+		$regex_img = '!https://media-exp1.licdn.com/dms/image/[^\s"]*!';
 
-	$desired_num = $_POST["desired_num"] ? clean_input($_POST["desired_num"]) : 5;
-	echo "Desired Num: $desired_num";
+		$desired_num = $_POST["desired_num"] ? clean_input($_POST["desired_num"]) : 5;
+		echo "Desired Num: $desired_num";
 
-	$img_urls = get_img_urls($page, $regex_img);
+		$img_urls = get_img_urls($page, $regex_img);
 
-	$html = "<h2>OUTPUT RESULTS:</h2>";
-	$html .= '<h3>$srch_url: ' . $srch_url . '</h3>';
-	$html .= show_img_gallery($img_urls, $desired_num);
+		$html = "<h2>OUTPUT RESULTS:</h2>";
+		$html .= '<h3>$srch_url: ' . $srch_url . '</h3>';
+		$html .= show_img_gallery($img_urls, $desired_num);
 
-} else {
-	$html = "<h3>No search results available. Try again.</h3>";
+	} else {
+		$html = "<h3>No search results available. Try again.</h3>";
+	}
+
+	return $html;
 }
+
+$html = get_results_html();
+
 
 ?>
 
