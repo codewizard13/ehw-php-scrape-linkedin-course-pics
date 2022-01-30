@@ -14,21 +14,26 @@ File Purpose:
 */
 
 .ehw-curl-results {
-    background: beige;
-    border: solid 2px red;
-    margin: 2rem auto;
-    max-width: 1024px;
-    width: 90%;
-    overflow: hidden;
-    padding: 0.6rem;
+  background: beige;
+  border: solid 2px red;
+  margin: 2rem auto;
+  max-width: 1024px;
+  width: 90%;
+  overflow: hidden;
+  padding: 0.6rem;
+}
+
+.ehw-curl-results > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .res-img-cont {
-    float: left;
-    margin: 7px 0 0 7px;
-    list-style: none;
-    max-width: 500px;
-    width: 21%;
-    border: solid #7c7373 1px;
-    background: white;
+  float: left;
+  margin: 7px 0 0 7px;
+  list-style: none;
+  max-width: 500px;
+  width: 100%;
+  border: solid #7c7373 1px;
+  background: white;
 }
