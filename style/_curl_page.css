@@ -38,3 +38,7 @@ File Purpose:
   border: solid #7c7373 1px;
   background: white;
 }
+
+.res-img-cont img {
+  max-width: 100%;
+}
