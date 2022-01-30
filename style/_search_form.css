@@ -18,12 +18,7 @@ File Purpose:
 
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
-
-    grid-template-areas:
-        "header header"
-        "sidebar main"
-        "sidebar footer"
-
+    grid-column-gap: .3rem;
 }
 
 #search-form p {
