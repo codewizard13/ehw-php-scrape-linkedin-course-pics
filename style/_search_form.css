@@ -22,13 +22,11 @@ File Purpose:
 }
 
 #search-form p {
-    background-color: pink;
     margin: .2rem;
     align-self: end;
 }
 
 #search-form p input {
-    background:darkorange;
     width: 100%;
 }
 
