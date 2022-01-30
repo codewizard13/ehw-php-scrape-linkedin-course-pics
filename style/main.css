@@ -43,6 +43,10 @@ Demo Palette:
 @import '_curl_page.css';
 @import '_search_form.css';
 
+html * {
+    box-sizing: border-box;
+}
+
 #wrapper {
     margin: 0 auto;
     background: #536e1d;
