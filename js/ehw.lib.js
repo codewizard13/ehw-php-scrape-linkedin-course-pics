@@ -34,6 +34,26 @@ Future:
   * Use fetch API or CURL to grab webpage content with controller.php
 */
 
+function getCurrentDateTime() {
+  var currentdate = new Date();
+  var datetime = "Last Sync: " + currentdate.getDate() + "/"
+      + (currentdate.getMonth()+1)+ "/"
+      + currentdate.getFullYear() + "@"
+      + currentdate.getHours() + ":"
+      + currentdate.getMinutes() + ":"
+      + currentdate.getSeconds();
+  return datetime;
+}
+
+function getDateTime(dt_fmt='US-12') {
+  var currentdate = new Date();
+  var yr2 = currentdate.getFullYear().toString().substring(2);
+  var mo2 = String(currentdate.getMonth() + 1).padStart(2, 0);
+  var dy2 = String(currentdate.getDate()).padStart(2, 0);
+  var today_date = `${mo2}/${dy2}/${yr2}`;
+  return today_date;
+}
+
 function create_results_box() {
     // create new element
     eh_div = document.createElement('div');
@@ -75,6 +95,7 @@ function update_results(res) {
 update_results("Hello DOLLY!");
 update_results("")
 update_results("***")
+update_results("Current Date/Time: " + getCurrentDateTime() + '<br>' + getDateTime())
 //alert('press enter to change the message');
 //update_results('Apples are AWESOME')
 
@@ -144,5 +165,5 @@ function formatJSONAutos_01(obj) {
         console.log(obj[i]);
     }
 }
-formatJSONAutos_01(data);
+// formatJSONAutos_01(data);
 
