@@ -15,6 +15,9 @@ File Purpose:
 
 #search-form {
     background:rgb(187, 204, 204);
+    margin: 1rem;
+    border-radius: .3rem;
+    padding: .3rem .6rem;
 
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
