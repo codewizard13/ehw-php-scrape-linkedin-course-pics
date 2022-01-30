@@ -18,7 +18,8 @@ File Purpose:
 <h3>$srch_url: https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6</h3>
 
 <ul>
-  <li class="res-img-cont">1: 
+  <li class="res-img-cont">
+  <p><span class="count-num"> 1:</span></p> 
     <img src="https://media-exp1.licdn.com/dms/image/C4E0DAQHrK3_TAA5SMg/learning-public-crop_288_512/0/1595872229643?e=1643641200&amp;v=beta&amp;t=IhlIDhIp_pJCy5Ip8fk9mkLpZnLcDgjYleFppfjhUWQ" style="width: 100%">
   </li>
   <li class="res-img-cont">2: 
