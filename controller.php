@@ -89,6 +89,7 @@ $date_created = "01/28/22"
     <h2><?php echo $page_title; ?></h2>
     <p>Filename: <span class="property"><?php echo basename(__FILE__); ?></span></p>
 	<p>Date Created: <span class="property"><?php echo $date_created ?></span>
+	<p>Today's Date/Time: <span class="property">PLACEHOLDER</span>
 </div><!-- /ehw-top-head div -->
 
 <main>
