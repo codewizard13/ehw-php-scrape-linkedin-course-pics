@@ -36,7 +36,8 @@ $dummy_srch_url = 'https://www.linkedin.com/learning/search?keywords=object%20or
 
 $head = <<<HTM
 <h2>OUTPUT RESULTS:</h2>
-<input type=text name='srch_url' id='srch_url' value=$dummy_srch_url readonly><br>
+<h3>URL Searched:</h3>
+<input type=text name='srch_url' id='srch_url' value=$dummy_srch_url readonly>
 HTM;
 
 $html = $head . show_img_gallery($dummy_urls, 16);
