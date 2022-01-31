@@ -15,10 +15,13 @@ File Purpose:
 -->
 
 <style>
-input#srch_url {
+input#srch_url{
     width: 100%;
     border-color: blueviolet;
     height: 1.8rem;
+    outline: none; /* remove focus border */
+    border-radius: .3rem;
+    padding-left: .3rem;
 }
 </style>
 
@@ -33,8 +36,7 @@ $dummy_srch_url = 'https://www.linkedin.com/learning/search?keywords=object%20or
 
 $head = <<<HTM
 <h2>OUTPUT RESULTS:</h2>
-<input type=text name='srch_url' id='srch_url' value=$dummy_srch_url><br>
-\$srch_url: https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6</h3>
+<input type=text name='srch_url' id='srch_url' value=$dummy_srch_url readonly><br>
 HTM;
 
 $html = $head . show_img_gallery($dummy_urls, 16);
