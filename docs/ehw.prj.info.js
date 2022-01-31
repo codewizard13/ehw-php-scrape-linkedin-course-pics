@@ -17,7 +17,7 @@ Author URI:   http://erichepperle.com
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
-Proj Version:   1.00.00
+Proj Version:   1.00.02
 File Version:   1.00.00
 
 Prj Type:       Demo     

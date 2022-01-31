@@ -3,7 +3,7 @@ Project Name:   EHW PHP Demo: Scrape LinkedIn Course List Images
 Main Prj File:  controller.php
 
 This Filename:  tmplt__dyn_res.php
-Date Created:   01/30/22
+Date Created:   01/31/22
 Date Updated:   --
 Programmer:     Eric L. Hepperle
 

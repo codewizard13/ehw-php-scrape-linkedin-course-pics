@@ -7,7 +7,7 @@ Date Created:   01/19/22
 Date Updated:   01/31/22
 Programmer:     Eric L. Hepperle
 
-File Version:    1.00.00
+File Version:    1.00.02
 
 Prj Purpose: 
 Web Scraper demo for testing slurping / web scraping
