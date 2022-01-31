@@ -23,6 +23,25 @@ input#srch_url{
     border-radius: .3rem;
     padding-left: .3rem;
 }
+
+.ehw-curl-results h2 {
+    background-color: aquamarine;
+    padding: .3rem;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+
+    background-image: linear-gradient(
+      to right, 
+      #513268, 
+      #3b204d, 
+      rgb(221 196 229), 
+      #9c5b8e
+    );
+    color: antiquewhite;
+}
+
+
+
 </style>
 
 <!--<section class="ehw-curl-results">-->
