@@ -133,8 +133,7 @@ function update_results(res) {
 update_results("Hello DOLLY!");
 update_results("")
 update_results("***")
-update_results("Current Date/Time: " + getCurrentDateTime()
- + '<br>' + today['EN-12'].date_mmddyy)
+update_results("Current Date/Time: " + today['EN-12'].date.date_full)
 //alert('press enter to change the message');
 //update_results('Apples are AWESOME')
 

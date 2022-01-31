@@ -83,13 +83,15 @@ $date_created = "01/28/22"
 <body>
 
 <div id="wrapper" class="container-fluid">
+	
+
 
 <div id="ehw-top-head">
     <div id="header-img"></div>
     <h2><?php echo $page_title; ?></h2>
     <p>This Filename: <span class="property"><?php echo basename(__FILE__); ?></span></p>
 	<p>Date Created: <span class="property"><?php echo $date_created ?></span>
-	<p>Today's Date/Time: <span class="property">PLACEHOLDER</span>
+	<p class="ehw-date-time">Today's Date/Time: <span class="property date"></span><span class="property time"></span>
 </div><!-- /ehw-top-head div -->
 
 <main>
@@ -214,7 +216,16 @@ $html = '<h3>Image display temorarily disabled by Eric.</h3>';
 <!-- JavaScript -->
 <script src="js/ehw.lib.js"></script>
 <!--<script src="js/Demo.js"></script>-->
+<script>
+	var date_el = document.querySelector('.ehw-date-time .date');
+	var time_el = document.querySelector('.ehw-date-time .time');
 
+	var now_date = today["EN-12"].date.date_full;
+	var now_time = '[' + today["EN-12"].time.fmt_12hr_pad + ']';
+
+	date_el.innerText = now_date;
+	time_el.innerText = now_time;
+</script>
 
 </body>
 </html>
