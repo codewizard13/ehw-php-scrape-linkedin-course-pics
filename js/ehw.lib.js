@@ -28,7 +28,8 @@ Requires:
 Demonstrates:
   * Vanilla JavaScript
   * JavaScript ES6/ECMAScript2015
-  * 
+  * ES6 Date/Time object
+  * padStart() for leading zeroes
 
 Future:
   * Use fetch API or CURL to grab webpage content with controller.php
@@ -46,13 +47,22 @@ function getCurrentDateTime() {
 }
 
 function getDateTime(dt_fmt='US-12') {
-  var currentdate = new Date();
-  var yr2 = currentdate.getFullYear().toString().substring(2);
-  var mo2 = String(currentdate.getMonth() + 1).padStart(2, 0);
-  var dy2 = String(currentdate.getDate()).padStart(2, 0);
+  var out_obj = {};
+  var cur_dt = new Date();
+  var yr2 = cur_dt.getFullYear().toString().substring(2);
+  var mo2 = String(cur_dt.getMonth() + 1).padStart(2, 0);
+  var dy2 = String(cur_dt.getDate()).padStart(2, 0);
   var today_date = `${mo2}/${dy2}/${yr2}`;
-  return today_date;
+  
+  out_obj.dt = cur_dt;
+  out_obj['EN-12'] = {};
+  out_obj['EN-12'].date_mmddyy = today_date;
+  out_obj['EN-12'].mo_long = cur_dt.toLocaleString('default', { month: 'long' });
+
+  return out_obj;
 }
+// const today = getDateTime()['EN-12'];
+const today = getDateTime();
 
 function create_results_box() {
     // create new element
@@ -95,7 +105,8 @@ function update_results(res) {
 update_results("Hello DOLLY!");
 update_results("")
 update_results("***")
-update_results("Current Date/Time: " + getCurrentDateTime() + '<br>' + getDateTime())
+update_results("Current Date/Time: " + getCurrentDateTime()
+ + '<br>' + today['EN-12'].date_mmddyy)
 //alert('press enter to change the message');
 //update_results('Apples are AWESOME')
 
