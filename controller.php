@@ -181,7 +181,7 @@ function get_results_html() {
 }
 
 $html = get_results_html();
-$html = file_get_contents('inc/tmplt__results.php');
+$html = file_get_contents('inc/tmplt__results.htm');
 
 // Temporarily disable image display
 // $html = '<h3>Image display temorarily disabled by Eric.</h3>';
