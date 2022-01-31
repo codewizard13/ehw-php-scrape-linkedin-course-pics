@@ -47,17 +47,25 @@ function getCurrentDateTime() {
 }
 
 function getDateTime(dt_fmt='US-12') {
+
   var out_obj = {};
   var cur_dt = new Date();
+
   var yr2 = cur_dt.getFullYear().toString().substring(2);
   var mo2 = String(cur_dt.getMonth() + 1).padStart(2, 0);
   var dy2 = String(cur_dt.getDate()).padStart(2, 0);
-  var today_date = `${mo2}/${dy2}/${yr2}`;
+  var date_mmddyy = `${mo2}/${dy2}/${yr2}`;
+  var dow_name = Intl.DateTimeFormat('en-US', { weekday: 'long'}).format(cur_dt);
+  var mo_long = cur_dt.toLocaleString('default', { month: 'long' });
+  var date_full = `${dow_name}, ${mo_long} ${dy2}, ${cur_dt.getFullYear()}`;
+
   
   out_obj.dt = cur_dt;
   out_obj['EN-12'] = {};
-  out_obj['EN-12'].date_mmddyy = today_date;
-  out_obj['EN-12'].mo_long = cur_dt.toLocaleString('default', { month: 'long' });
+  out_obj['EN-12'].date_mmddyy = date_mmddyy;
+  out_obj['EN-12'].mo_long = mo_long;
+  out_obj['EN-12'].dow_name = dow_name;
+  out_obj['EN-12'].date_full = date_full;
 
   return out_obj;
 }
