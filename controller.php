@@ -182,12 +182,7 @@ function get_results_html() {
 
 $html = get_results_html();
 $html = file_get_contents('inc/tmplt__results.htm');
-// require_once('inc/tmplt__dyn_res.php');
-// Set dummy urls
-$def_img_url = 'pix/thumbs/1610728168219.jpg';
-$dummy_urls = array_fill(0, 12, $def_img_url);
-$html = show_img_gallery($dummy_urls, 16);
-
+require_once('inc/tmplt__dyn_res.php');
 
 // Temporarily disable image display
 // $html = '<h3>Image display temorarily disabled by Eric.</h3>';

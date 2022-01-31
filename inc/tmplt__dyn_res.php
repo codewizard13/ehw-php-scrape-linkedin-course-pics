@@ -17,24 +17,15 @@ File Purpose:
 
 
 <!--<section class="ehw-curl-results">-->
+<?php
+$html = <<<HTM
 <h2>OUTPUT RESULTS:</h2>
-<h3>$srch_url: https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6</h3>
+<h3>\$srch_url: https://www.linkedin.com/learning/search?keywords=object%20oriented%20javascript%20es6</h3>
+HTM;
 
+// Set dummy urls
+$def_img_url = 'pix/thumbs/1610728168219.jpg';
+$dummy_urls = array_fill(0, 12, $def_img_url);
+$html .= show_img_gallery($dummy_urls, 16);
 
-<?php
-$def_img_url = 'pix/thumbs/1610728168219.jpg'
 ?>
-<img src="<?php echo $def_img_url; ?>">
-<?php
-$dummy_urls_1 = [
-  'https://some-image-url-1',
-  'https://some-image-url-2'
-];
-
-$urls = range(1,12);
-var_dump($urls);
-
-$test_urls = array_fill(0, 12, $def_img_url);
-var_dump($test_urls);
-
-$html = show_img_gallery($test_urls, 16); ?>
