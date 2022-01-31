@@ -49,8 +49,11 @@ function getCurrentDateTime() {
 function getDateTime(dt_fmt='US-12') {
 
   var out_obj = {};
+  var date_obj = {};
+  var time_obj = {};
   var cur_dt = new Date();
 
+  // Date
   var yr2 = cur_dt.getFullYear().toString().substring(2);
   var mo2 = String(cur_dt.getMonth() + 1).padStart(2, 0);
   var dy2 = String(cur_dt.getDate()).padStart(2, 0);
@@ -59,13 +62,30 @@ function getDateTime(dt_fmt='US-12') {
   var mo_long = cur_dt.toLocaleString('default', { month: 'long' });
   var date_full = `${dow_name}, ${mo_long} ${dy2}, ${cur_dt.getFullYear()}`;
 
+  date_obj = {
+    yr2, mo2, dy2, date_mmddyy, dow_name, mo_long, date_full
+  }
+
+  // Time
+  var hrs = cur_dt.getHours(); // gets 24 hr val
+  var AmOrPm = hrs >= 12 ? 'PM' : 'AM';
+  
+  hrs = (hrs % 12) || 12;
+  var hrs_pad = hrs.toString().padStart(2, 0);
+
+  var mins = cur_dt.getMinutes();
+  var fmt_12hr = `${hrs}:${mins} ${AmOrPm}`;
+  var fmt_12hr_pad = `${hrs}:${mins} ${AmOrPm}`;
+
+  time_obj = {
+    hrs, AmOrPm, mins, fmt_12hr, fmt_12hr_pad
+  }
+
   
   out_obj.dt = cur_dt;
   out_obj['EN-12'] = {};
-  out_obj['EN-12'].date_mmddyy = date_mmddyy;
-  out_obj['EN-12'].mo_long = mo_long;
-  out_obj['EN-12'].dow_name = dow_name;
-  out_obj['EN-12'].date_full = date_full;
+  out_obj['EN-12'].date = date_obj;
+  out_obj['EN-12'].time = time_obj;
 
   return out_obj;
 }
