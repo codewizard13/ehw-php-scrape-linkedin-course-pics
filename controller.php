@@ -184,7 +184,7 @@ $html = get_results_html();
 $html = file_get_contents('inc/tmplt__results.php');
 
 // Temporarily disable image display
-$html = '<h3>Image display temorarily disabled by Eric.</h3>';
+// $html = '<h3>Image display temorarily disabled by Eric.</h3>';
 
 ?>
 
