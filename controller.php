@@ -19,11 +19,11 @@ File Purpose:
 PHP Controller file for project.
 
 Usage:
-Navigate to any video of an Upwork job posting page and paste the
+Navigate to any video of a LinkedIn Learning course page and paste the
 code from App.js into the browser developer console and hit enter to run.
 
 Requires:
-* Browser navigated to an Upwork job posting page page
+* Browser navigated to a LinkedIn Learning course page page
 * Web server supporting PHP 7.4
 * The project folder must live on a web server, local or remote.
 * Be logged into LinkedIn Learning
