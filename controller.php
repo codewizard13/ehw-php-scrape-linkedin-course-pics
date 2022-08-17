@@ -124,11 +124,11 @@ $date_created = "01/28/22"
 
 	<p class="num-sel">
 		<label for="desired_num">How Many?</label>
-		<input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10">
+		<input type="number" id="desired_num" name="desired_num" min="1" max="100" value="10"/>
 	</p>
 
 	<p class="btn-search">
-		<input type="submit" name="search" value="Search">
+		<input type="submit" name="search" value="Search"/>
 	</p>
 
 </form>
