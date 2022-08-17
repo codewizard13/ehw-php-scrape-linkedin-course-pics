@@ -182,7 +182,12 @@ $date_created = "01/28/22"
 				}
 
 				$html = get_results_html();
-				// $html = file_get_contents('inc/tmplt__results.htm');
+				$html = file_get_contents('inc/tmplt__results.htm');
+
+				// Debugging $html
+				echo "<div style='border: solid 2px brown'><h3>inc/tmplt__results.htm</h3>";
+				echo $html . "</div>";
+
 				require_once('inc/tmplt__dyn_res.php');
 
 				// Temporarily disable image display
