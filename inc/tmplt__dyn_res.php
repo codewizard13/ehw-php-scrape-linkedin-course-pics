@@ -10,38 +10,34 @@ Programmer:     Eric L. Hepperle
 File Version:    1.00.00
 
 File Purpose:
-  Dynamic PHP View Page template for what output should look like.
+  Dummy View Page template for what output should look like.
   This
 -->
 
 <style>
-input#srch_url{
+  input#srch_url {
     width: 100%;
     border-color: blueviolet;
     height: 1.8rem;
-    outline: none; /* remove focus border */
+    outline: none;
+    /* remove focus border */
     border-radius: .3rem;
     padding-left: .3rem;
-}
+  }
 
-.ehw-curl-results h2 {
+  .ehw-curl-results h2 {
     background-color: aquamarine;
     padding: .3rem;
     font-size: 1.4rem;
     padding: .5rem 1rem;
 
-    background-image: linear-gradient(
-      to right, 
-      #513268, 
-      #3b204d, 
-      rgb(221 196 229), 
-      #9c5b8e
-    );
+    background-image: linear-gradient(to right,
+        #513268,
+        #3b204d,
+        rgb(221 196 229),
+        #9c5b8e);
     color: antiquewhite;
-}
-
-
-
+  }
 </style>
 
 <!--<section class="ehw-curl-results">-->
